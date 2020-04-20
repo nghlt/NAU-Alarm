@@ -1,0 +1,10 @@
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\bin\Release\Fermentor Alarm.exe.config
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\bin\Release\Fermentor Alarm.exe
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\bin\Release\Fermentor Alarm.pdb
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor_Alarm.Fermentor_Alarm.resources
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor_Alarm.Properties.Resources.resources
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor Alarm.csproj.GenerateResource.cache
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor Alarm.csproj.CoreCompileInputs.cache
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor Alarm.exe
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor Alarm.pdb
+C:\Cloud\OneDrive - VNU-HCMUS\Dropbox\Temp\Fermentor Alarm\Fermentor Alarm\Fermentor Alarm\obj\Release\Fermentor Alarm.csprojAssemblyReference.cache
