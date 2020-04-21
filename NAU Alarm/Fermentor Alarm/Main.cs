@@ -164,7 +164,7 @@ namespace Fermentor_Alarm
         }
         #endregion 
 
-        #region 3. Limit manipulatate
+        #region 3. Limit manipulatating
         private void CheckLimites()
         {
             try

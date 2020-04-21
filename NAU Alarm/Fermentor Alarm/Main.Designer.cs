@@ -48,16 +48,10 @@
             this.labelTemp = new System.Windows.Forms.Label();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.txtTempLow = new System.Windows.Forms.TextBox();
-            this.txtTempUp = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.txtDOLow = new System.Windows.Forms.TextBox();
-            this.txtDOUp = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.txtpHLow = new System.Windows.Forms.TextBox();
-            this.txtpHUp = new System.Windows.Forms.TextBox();
             this.labelDO = new System.Windows.Forms.Label();
             this.labelpH = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,6 +67,12 @@
             this.txtTime = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.txtTempLow = new System.Windows.Forms.TextBox();
+            this.txtTempUp = new System.Windows.Forms.TextBox();
+            this.txtDOLow = new System.Windows.Forms.TextBox();
+            this.txtDOUp = new System.Windows.Forms.TextBox();
+            this.txtpHLow = new System.Windows.Forms.TextBox();
+            this.txtpHUp = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -331,7 +331,7 @@
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel5.Controls.Add(this.textBox2, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.textBox2, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.txtTempLow, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.txtTempUp, 2, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -341,13 +341,12 @@
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(249, 21);
-            this.tableLayoutPanel5.TabIndex = 1;
+            this.tableLayoutPanel5.TabIndex = 0;
             // 
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox2.Enabled = false;
             this.textBox2.ForeColor = System.Drawing.Color.White;
             this.textBox2.Location = new System.Drawing.Point(122, 4);
@@ -360,36 +359,6 @@
             this.textBox2.Text = "-";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtTempLow
-            // 
-            this.txtTempLow.BackColor = System.Drawing.Color.Black;
-            this.txtTempLow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTempLow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTempLow.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txtTempLow.Location = new System.Drawing.Point(3, 4);
-            this.txtTempLow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTempLow.Name = "txtTempLow";
-            this.txtTempLow.Size = new System.Drawing.Size(113, 15);
-            this.txtTempLow.TabIndex = 4;
-            this.txtTempLow.Text = "28.5";
-            this.txtTempLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTempLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
-            // 
-            // txtTempUp
-            // 
-            this.txtTempUp.BackColor = System.Drawing.Color.Black;
-            this.txtTempUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTempUp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtTempUp.ForeColor = System.Drawing.Color.OrangeRed;
-            this.txtTempUp.Location = new System.Drawing.Point(132, 4);
-            this.txtTempUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTempUp.Name = "txtTempUp";
-            this.txtTempUp.Size = new System.Drawing.Size(114, 15);
-            this.txtTempUp.TabIndex = 5;
-            this.txtTempUp.Text = "31.5";
-            this.txtTempUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtTempUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
-            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -397,7 +366,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel4.Controls.Add(this.textBox3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.textBox3, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtDOLow, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.txtDOUp, 2, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -407,13 +376,12 @@
             this.tableLayoutPanel4.RowCount = 1;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(249, 21);
-            this.tableLayoutPanel4.TabIndex = 0;
+            this.tableLayoutPanel4.TabIndex = 1;
             // 
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox3.Enabled = false;
             this.textBox3.ForeColor = System.Drawing.Color.White;
             this.textBox3.Location = new System.Drawing.Point(122, 4);
@@ -426,36 +394,6 @@
             this.textBox3.Text = "-";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDOLow
-            // 
-            this.txtDOLow.BackColor = System.Drawing.Color.Black;
-            this.txtDOLow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDOLow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDOLow.ForeColor = System.Drawing.Color.SpringGreen;
-            this.txtDOLow.Location = new System.Drawing.Point(3, 4);
-            this.txtDOLow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDOLow.Name = "txtDOLow";
-            this.txtDOLow.Size = new System.Drawing.Size(113, 15);
-            this.txtDOLow.TabIndex = 6;
-            this.txtDOLow.Text = "5";
-            this.txtDOLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDOLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
-            // 
-            // txtDOUp
-            // 
-            this.txtDOUp.BackColor = System.Drawing.Color.Black;
-            this.txtDOUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDOUp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDOUp.ForeColor = System.Drawing.Color.SpringGreen;
-            this.txtDOUp.Location = new System.Drawing.Point(132, 4);
-            this.txtDOUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtDOUp.Name = "txtDOUp";
-            this.txtDOUp.Size = new System.Drawing.Size(114, 15);
-            this.txtDOUp.TabIndex = 7;
-            this.txtDOUp.Text = "100";
-            this.txtDOUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDOUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
-            // 
             // tableLayoutPanel6
             // 
             this.tableLayoutPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
@@ -463,7 +401,7 @@
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
             this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Controls.Add(this.textBox4, 0, 0);
+            this.tableLayoutPanel6.Controls.Add(this.textBox4, 1, 0);
             this.tableLayoutPanel6.Controls.Add(this.txtpHLow, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.txtpHUp, 2, 0);
             this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -473,13 +411,12 @@
             this.tableLayoutPanel6.RowCount = 1;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel6.Size = new System.Drawing.Size(250, 21);
-            this.tableLayoutPanel6.TabIndex = 1;
+            this.tableLayoutPanel6.TabIndex = 2;
             // 
             // textBox4
             // 
             this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.textBox4.Enabled = false;
             this.textBox4.ForeColor = System.Drawing.Color.White;
             this.textBox4.Location = new System.Drawing.Point(123, 4);
@@ -491,36 +428,6 @@
             this.textBox4.TabStop = false;
             this.textBox4.Text = "-";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // txtpHLow
-            // 
-            this.txtpHLow.BackColor = System.Drawing.Color.Black;
-            this.txtpHLow.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpHLow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtpHLow.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtpHLow.Location = new System.Drawing.Point(3, 4);
-            this.txtpHLow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtpHLow.Name = "txtpHLow";
-            this.txtpHLow.Size = new System.Drawing.Size(114, 15);
-            this.txtpHLow.TabIndex = 8;
-            this.txtpHLow.Text = "6.4";
-            this.txtpHLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtpHLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
-            // 
-            // txtpHUp
-            // 
-            this.txtpHUp.BackColor = System.Drawing.Color.Black;
-            this.txtpHUp.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpHUp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtpHUp.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtpHUp.Location = new System.Drawing.Point(133, 4);
-            this.txtpHUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtpHUp.Name = "txtpHUp";
-            this.txtpHUp.Size = new System.Drawing.Size(114, 15);
-            this.txtpHUp.TabIndex = 9;
-            this.txtpHUp.Text = "6.6";
-            this.txtpHUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtpHUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
             // 
             // labelDO
             // 
@@ -750,6 +657,90 @@
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // txtTempLow
+            // 
+            this.txtTempLow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtTempLow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTempLow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTempLow.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtTempLow.Location = new System.Drawing.Point(3, 3);
+            this.txtTempLow.Name = "txtTempLow";
+            this.txtTempLow.Size = new System.Drawing.Size(113, 22);
+            this.txtTempLow.TabIndex = 13;
+            this.txtTempLow.Text = "29";
+            this.txtTempLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTempLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
+            // txtTempUp
+            // 
+            this.txtTempUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtTempUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTempUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtTempUp.ForeColor = System.Drawing.Color.OrangeRed;
+            this.txtTempUp.Location = new System.Drawing.Point(132, 3);
+            this.txtTempUp.Name = "txtTempUp";
+            this.txtTempUp.Size = new System.Drawing.Size(114, 22);
+            this.txtTempUp.TabIndex = 14;
+            this.txtTempUp.Text = "31";
+            this.txtTempUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTempUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
+            // txtDOLow
+            // 
+            this.txtDOLow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtDOLow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDOLow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDOLow.ForeColor = System.Drawing.Color.SpringGreen;
+            this.txtDOLow.Location = new System.Drawing.Point(3, 3);
+            this.txtDOLow.Name = "txtDOLow";
+            this.txtDOLow.Size = new System.Drawing.Size(113, 22);
+            this.txtDOLow.TabIndex = 12;
+            this.txtDOLow.Text = "5";
+            this.txtDOLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDOLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
+            // txtDOUp
+            // 
+            this.txtDOUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtDOUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDOUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDOUp.ForeColor = System.Drawing.Color.SpringGreen;
+            this.txtDOUp.Location = new System.Drawing.Point(132, 3);
+            this.txtDOUp.Name = "txtDOUp";
+            this.txtDOUp.Size = new System.Drawing.Size(114, 22);
+            this.txtDOUp.TabIndex = 13;
+            this.txtDOUp.Text = "100";
+            this.txtDOUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDOUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
+            // txtpHLow
+            // 
+            this.txtpHLow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtpHLow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpHLow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtpHLow.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtpHLow.Location = new System.Drawing.Point(3, 3);
+            this.txtpHLow.Name = "txtpHLow";
+            this.txtpHLow.Size = new System.Drawing.Size(114, 22);
+            this.txtpHLow.TabIndex = 12;
+            this.txtpHLow.Text = "6.4";
+            this.txtpHLow.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpHLow.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
+            // txtpHUp
+            // 
+            this.txtpHUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtpHUp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtpHUp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtpHUp.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtpHUp.Location = new System.Drawing.Point(133, 3);
+            this.txtpHUp.Name = "txtpHUp";
+            this.txtpHUp.Size = new System.Drawing.Size(114, 22);
+            this.txtpHUp.TabIndex = 13;
+            this.txtpHUp.Text = "6.7";
+            this.txtpHUp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpHUp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Number_KeyPress);
+            // 
             // Fermentor_Alarm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -817,18 +808,18 @@
         private System.Windows.Forms.TextBox txtReadMe;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox txtTempLow;
-        private System.Windows.Forms.TextBox txtTempUp;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox txtDOLow;
-        private System.Windows.Forms.TextBox txtDOUp;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox txtpHLow;
-        private System.Windows.Forms.TextBox txtpHUp;
         private System.Windows.Forms.TextBox txtStateText;
         private System.Windows.Forms.TextBox txtStateSymbol;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.TextBox txtErrorIndicator;
+        private System.Windows.Forms.TextBox txtTempLow;
+        private System.Windows.Forms.TextBox txtTempUp;
+        private System.Windows.Forms.TextBox txtDOLow;
+        private System.Windows.Forms.TextBox txtDOUp;
+        private System.Windows.Forms.TextBox txtpHLow;
+        private System.Windows.Forms.TextBox txtpHUp;
     }
 }
 
